@@ -1,0 +1,1103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainApp {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.app {
+  position: relative;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.new-conservation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 2rem; */
+  padding: 1rem 2rem;
+  gap: 2.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s;
+  color: purple;
+  background-color: #7f27ff;
+}
+
+.new-conservation-btn:hover {
+  background-color: #6b15ec;
+  color: #000;
+}
+
+.new-conservation-btn p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.new-conservation-btn button {
+  border: none;
+  background: none;
+  color: purple;
+  font-weight: 600;
+}
+
+.new-converse-icon {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1.5rem;
+  background-color: #020511;
+  transition: left 0.3s ease-in;
+  width: 26.5rem;
+  height: 100vh;
+}
+
+.history-para {
+  color: #e5e3e3;
+}
+
+.version {
+  text-align: right;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  /* color: #3d0593; */
+  font-weight: 600;
+}
+
+.start-interface {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding-left: 0.2rem;
+}
+
+.box p {
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 0.5rem 0.2rem #00000012;
+
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: rgb(48, 48, 48);
+}
+
+.image-input {
+  padding: 1rem;
+  background-color: red;
+}
+
+.image-input input[type="file"] {
+  width: 0;
+}
+
+input[type="file"] {
+  appearance: none;
+}
+
+.box-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #504f4f;
+}
+
+.box-header span {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0bfbf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.search-history {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 55vh;
+  overflow-y: auto;
+}
+
+.error {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin: 5rem 1rem;
+}
+
+.search-history p {
+  cursor: pointer;
+}
+
+.aside-actions {
+  line-height: 2.2;
+  padding: 1.5rem;
+}
+
+.user-icon-name {
+  display: none;
+}
+
+.history-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.history-container:hover {
+  background-color: #43529031;
+}
+
+.del {
+  width: 1.7rem;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+hr {
+  /* padding: 0; */
+  height: 0.1rem;
+  margin: 0.5rem 0;
+  border: none;
+  background-color: #9999997d;
+  color: green;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.action span {
+  font-size: 1.5rem;
+  color: #e5e3e3;
+}
+
+.action p {
+  color: #e5e3e3;
+}
+
+.harmburger {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.padd-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.appContent {
+  background-color: #fff;
+
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.response-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.response-wrapper img {
+  width: 2.5rem;
+}
+
+.response-wrapper p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #800080;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.content-wrapper {
+  height: 78vh;
+  overflow-y: auto;
+  /* padding: 1rem 27rem; */
+  margin-top: 1rem;
+  margin-left: 23rem;
+  padding-right: 23rem;
+  transition: all 0.3s ease-in;
+}
+
+.content-wrapper2 {
+  height: 78vh;
+  overflow-y: auto;
+  /* padding: 1rem 27rem; */
+  margin-top: 1rem;
+  margin-left: 23rem;
+  padding-right: 9rem;
+  transition: all 0.3s ease-in;
+}
+
+.app-heading {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  border: 2px solid #99999980;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+
+.input-box textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-family: inherit;
+}
+
+.input-box textarea::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box textarea {
+  width: 100%;
+  height: 45px;
+  min-height: 45x;
+  padding: 18px 10px;
+  line-height: 20px;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.input-box textarea::placeholder {
+  color: #999;
+  font-style: italic;
+  line-height: 1;
+}
+
+.form {
+  margin-top: 5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-left: 23rem;
+
+  transition: all 0.3s ease-in;
+}
+
+.form2 {
+  margin-top: 5rem;
+  max-width: 83rem;
+  margin: 0 auto;
+  margin-left: 34rem;
+  margin-right: 15rem;
+  transition: all 0.3s ease-in;
+}
+
+.response {
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.send-icon {
+  width: 4rem;
+  align-self: bottom;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.user-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.marginLeft {
+  margin-left: 34rem;
+}
+
+.marginLeftSmall {
+  margin-left: 48rem;
+}
+
+.user-abbr {
+  background-color: rgb(255, 174, 0);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon p:first-child {
+  font-weight: 600;
+  color: purple;
+}
+
+.user-abbr p {
+  font-size: 1rem;
+}
+
+.question {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.loader {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.spinner {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.4rem solid;
+  border-color: purple transparent purple;
+  border-radius: 50%;
+  animation: spin 1.3s ease infinite;
+  margin-top: 2rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 0;
+  padding-right: 15rem;
+  padding-left: 16rem;
+  box-shadow: 1rem 0 0.3rem 0.2rem #00000011;
+}
+
+.align-header {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.leftSpace {
+  margin-left: 0;
+  transition: all 0.3s ease-in;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #504e4e;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.active {
+  color: purple;
+  border-bottom: 2px solid purple;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.push {
+  margin-left: 7rem;
+}
+
+.about {
+  padding: 2rem 8rem;
+}
+
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.new-chat-icon {
+  display: none;
+}
+
+.about-page {
+  height: 100vh;
+  margin-top: 1rem;
+  padding-right: 10rem;
+  padding-left: 25rem;
+  transition: all 0.3s ease-in;
+  /* overflow-y: hidden; */
+}
+
+.How {
+  padding: 2rem 8rem;
+  transition: all 0.3s ease-in;
+}
+
+.How2 {
+  padding: 2rem 0;
+  transition: all 0.3s ease-in;
+  padding-right: -1rem;
+}
+
+.How h1 {
+  font-size: 3rem;
+}
+
+.How p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.How ul {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.How ul li {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.confirm {
+  max-width: 50rem;
+  padding: 4rem 6rem;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -30%);
+  box-shadow: 0 0 0.5rem 0.2rem #00000011;
+  border-radius: 1rem;
+  line-height: 1.6;
+}
+
+.confirm2 {
+  max-width: 50rem;
+  padding: 4rem 6rem;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  box-shadow: 0 0 0.5rem 0.2rem #00000011;
+  border-radius: 1rem;
+  line-height: 1.6;
+}
+
+.buttons-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buttons-confirm button {
+  border: none;
+  padding: 1rem 4rem;
+  background-color: rgb(194, 4, 4);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttons-confirm button:hover {
+  background-color: rgb(155, 0, 0);
+}
+
+.layer {
+  background-color: #0000004e;
+  z-index: 1000;
+  height: 100vh;
+}
+
+.response-logo2 {
+  transform: scaleX(-1);
+}
+
+.how-page {
+  height: 100vh;
+  margin-top: 1rem;
+  padding-right: 10rem;
+  padding-left: 25rem;
+  transition: all 0.3s ease-in;
+  overflow-y: auto;
+}
+
+.howContent {
+  height: 100vh;
+}
+
+.how-page2 {
+  height: 100vh;
+  margin-top: 1rem;
+  padding-right: 10rem;
+  padding-left: 15rem;
+  transition: all 0.3s ease-in;
+  overflow-y: auto;
+}
+
+.adjust-form {
+  position: relative;
+  z-index: -1;
+}
+
+.open {
+  /* position: absolute;
+  top: 1.5rem;
+  left: 20rem; */
+  font-size: 2.5rem;
+  cursor: pointer;
+
+  /* padding: 0 5rem; */
+}
+
+.hide {
+  /* opacity: 0; */
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* RESPONSE DESIGN */
+@media (max-width: 75em) {
+  .about-page {
+    padding-right: 0;
+    height: 90vh;
+    overflow-y: auto;
+  }
+
+  .about {
+    padding: 2rem 5rem;
+    /* height: 100vh;
+    overflow-y: auto; */
+  }
+
+  .form {
+    margin-left: 24rem;
+    margin-right: 20rem;
+  }
+
+  .header ul {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .content-wrapper {
+    margin-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .form2 {
+    margin-left: 33rem;
+    margin-right: 13rem;
+  }
+
+  .form {
+    margin-top: 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-left: 12rem;
+    margin-right: 2rem;
+  }
+
+  .how-page2 {
+    height: 100vh;
+    margin-top: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    transition: all 0.3s ease-in;
+  }
+
+  .how-page {
+    padding-right: 5rem;
+    padding-left: 25rem;
+  }
+
+  .How {
+    padding: 2rem 5rem;
+    transition: all 0.3s ease-in;
+  }
+
+  .How p {
+    font-size: 2rem;
+  }
+
+  .marginLeft {
+    margin-left: 32rem;
+  }
+
+  .marginLeftSmall {
+    margin-left: 30rem;
+  }
+
+  .push {
+    margin-left: 18rem;
+  }
+
+  .mainApp {
+    display: grid;
+    /* grid-template-columns: 27rem 4fr; */
+  }
+
+  .header {
+    display: flex;
+    padding: 1.5rem 5rem;
+  }
+
+  .header ul {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .header {
+    display: flex;
+    padding: 1.5rem 4rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem 4rem;
+    margin-left: 5rem;
+    padding-right: 8rem;
+  }
+
+  .marginLeft {
+    margin-left: 29rem;
+  }
+}
+
+.aside.close {
+  left: -27rem;
+  /* top: 0; */
+}
+
+.main-page {
+  margin-left: -12rem;
+}
+
+@media (max-width: 56.25em) {
+  .form {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .form2 {
+    margin-left: 31rem;
+    margin-right: 8rem;
+  }
+
+  .content-wrapper2 {
+    height: 80vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    margin-left: 25rem;
+    padding-right: 3rem;
+    transition: all 0.3s;
+  }
+
+  .how-page2 {
+    height: 100vh;
+    margin-top: 1rem;
+    padding-right: 0;
+  }
+
+  .how-page {
+    padding-right: 0;
+  }
+
+  .How {
+    padding: 2rem 5rem;
+    transition: all 0.3s ease-in;
+  }
+
+  .marginLeft {
+    margin-left: 29rem;
+  }
+
+  .confirm {
+    max-width: 50rem;
+    padding: 2.5rem 4rem;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 63%;
+    transform: translate(-50%, -30%);
+    box-shadow: 0 0 0.5rem 0.2rem #00000011;
+    border-radius: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .how-page2 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .start-interface {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    margin-left: 5.5rem;
+    margin-right: 10rem;
+    width: 85%;
+  }
+
+  .form2 {
+    margin-left: 5.5rem;
+    margin-right: 8rem;
+    width: 85%;
+  }
+
+  .leftSpace {
+    margin-left: 0;
+  }
+
+  .marginLeftSmall {
+    margin-left: 0;
+  }
+
+  .aside {
+    z-index: 200;
+  }
+
+  .marginLeft {
+    margin-left: 5rem;
+  }
+
+  .how-page {
+    padding-right: 0;
+    padding-left: 5rem;
+  }
+
+  .how-page2 {
+    padding-left: 0;
+  }
+
+  .content-wrapper {
+    margin-left: -0.5rem;
+  }
+
+  .about-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .hideSideBar {
+    position: absolute;
+    left: -27rem;
+    top: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .confirm {
+    padding: 3rem 4rem;
+    top: 40%;
+    left: 45%;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .content-wrapper {
+    margin-left: 4rem;
+    padding-right: 8rem;
+  }
+
+  .form2 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .How h1 {
+    font-size: 2.5rem;
+  }
+
+  .How p {
+    font-size: 1.6rem;
+  }
+
+  .howContent {
+    padding-left: -1rem;
+  }
+
+  .about {
+    padding: 2rem 5rem;
+  }
+
+  .search-history {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .remove {
+    display: none;
+  }
+
+  .new-chat-icon {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .align-header {
+    justify-content: space-between;
+    width: 100%;
+    gap: 2.5rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+  }
+
+  .header {
+    align-items: center;
+    justify-content: none;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .how-page2 {
+    height: 80vh;
+    overflow-y: auto;
+  }
+
+  .How {
+    padding-top: 2rem;
+    margin-left: -2.5rem;
+  }
+
+  .How p {
+    font-size: 1.8rem;
+  }
+
+  .How h1 {
+    font-size: 3rem;
+  }
+
+  .How ul li {
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+
+  .How ul {
+    margin-left: 0;
+  }
+
+  .about {
+    padding: 2rem 2rem;
+  }
+
+  .about p {
+    font-size: 1.8rem;
+  }
+
+  .about h1 {
+    font-size: 3rem;
+  }
+
+  .form {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+
+  .confirm2 {
+    max-width: 50rem;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    box-shadow: 0 0 0.5rem 0.2rem #00000011;
+    border-radius: 1rem;
+    line-height: 1.6;
+  }
+
+  .start-interface {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .confirm {
+    padding: 3rem 4rem;
+    top: 40%;
+    left: 45%;
+    z-index: 300;
+  }
+
+  .user-icon {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-wrapper2 {
+    height: 78vh;
+    overflow-y: auto;
+    margin-left: -1rem;
+    padding-right: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .content-wrapper {
+    height: 78vh;
+    overflow-y: auto;
+    margin-left: -2.3rem;
+    padding-right: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .marginLeft {
+    margin-left: 1.8rem;
+  }
+
+  .form2 {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    margin-left: 1.3rem;
+    margin-right: 5rem;
+    width: 93%;
+    position: fixed;
+    bottom: -6vh;
+  }
+
+  .form {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    margin-left: 1.3rem;
+    margin-right: 5rem;
+    width: 93%;
+    position: fixed;
+    bottom: -6vh;
+  }
+
+  .mainApp {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    /* overflow-y: hidden; */
+  }
+
+  .user-abbr {
+    background-color: rgb(255, 174, 0);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .user-abbr p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 25em) {
+  /* .form {
+    margin-left: 5rem;
+    margin-right: 3.5rem;
+  } */
+}
